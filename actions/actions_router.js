@@ -29,7 +29,7 @@ actionRouter.get('/:id',  (req, res) => {
         }
     })
     .catch(err => {
-        res.status(500).json({ error: "Could not get that action" });
+        res.status(500).json({ error: "Could not get that action" }); //always lands on this if ID doesn't exist for some reason
     })
 
 })
